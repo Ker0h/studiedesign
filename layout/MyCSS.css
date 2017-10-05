@@ -1,3 +1,29 @@
 h1 {
     color: #0000bf;
 }
+
+#colorstrip{
+    width: 100%; height: 20px;
+    border-style: solid;
+    border-color: #0000bf;
+    background-color: #0000bf;
+}
+
+/* Mobile first*/
+body {
+
+}
+
+/*rule for medium sized screens*/
+@media only screen and (min-width: 400px) {
+    body {
+
+    }
+}
+
+/* rule for bigger screens*/
+@media only screen and (min-width: 1190px) {
+    body {
+
+    }
+}
