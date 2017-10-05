@@ -1,12 +1,14 @@
-h1 {
-    color: #0000bf;
-}
+body { padding-top: 70px; }
 
 #colorstrip{
     width: 100%; height: 20px;
     border-style: solid;
     border-color: #0000bf;
     background-color: #0000bf;
+}
+
+#content {
+    padding-top: 20px;
 }
 
 /* Mobile first*/
