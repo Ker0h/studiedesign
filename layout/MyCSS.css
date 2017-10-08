@@ -1,12 +1,27 @@
-body { padding-top: 70px; }
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    color: white;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
 
-h1 {color: #0000bf}
+p {
+    font-family: 'Roboto', sans-serif;
+    bottom: 20px;
+    color: white;
+    margin: 0;
+}
 
 #colorstrip{
-    width: 100%; height: 20px;
+    width: 100%; height: 10px;
     border-style: solid;
     border-color: #0000bf;
     background-color: #0000bf;
+}
+
+.navbar-inner {
+    opacity: 0.8;
 }
 
 .content {
@@ -15,7 +30,15 @@ h1 {color: #0000bf}
 
 /* Mobile first*/
 body {
+    padding-top: 60px;
+    background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+    ),
+    url(../assets/images/10888.jpg);
 
+    /* This will ensure everywhere is covered */
+    background-size: cover;
 }
 
 /*rule for medium sized screens*/
