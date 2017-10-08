@@ -6,7 +6,7 @@ h1 {
     font-size: 2rem;
 }
 
-p {
+.paragraph {
     font-family: 'Roboto', sans-serif;
     bottom: 20px;
     color: white;
