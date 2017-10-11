@@ -34,13 +34,13 @@ function makeActive(questionNumber, answerNumber){
         var finalscoreElement = document.getElementById('finalScores');
         finalscoreElement.style.visibility = "visible";
         if (points >= 8){
-            finalscoreElement.innerHTML = '<div id="finalScore810" class="finalScore"><h1> Resultaat 8-10</h1><p>Wauw! wat een score! Zo te zien zit hier wel je interesse. Met zo\'n score kunnen wij zeker aanraden om te beginnen met de opleiding Informatica op avans!</p></div>'
+            finalscoreElement.innerHTML = '<div id="finalScore810" class="finalScore"><h1>Resultaat 8-10</h1><p>Wauw! wat een score! Zo te zien zit hier wel je interesse. Met zo\'n score kunnen wij zeker aanraden om te beginnen met de opleiding Informatica op avans!</p><a href="index.html"><button type="button" class="btn btn-primary">Terug naar de Homepage</button></a></div>'
         }
         if (points >= 5 && points <= 7){
-            finalscoreElement.innerHTML = '<div id="finalScore57" class="finalScore"><h1> Resultaat 5-7</h1><p>Je interesse is zeker terug te zien uit de score van deze quiz. De opleiding Informatica zou je zeker in je opleidingskeuze moeten meenemen!</p></div>'
+            finalscoreElement.innerHTML = '<div id="finalScore57" class="finalScore"><h1>Resultaat 5-7</h1><p>Je interesse is zeker terug te zien uit de score van deze quiz. De opleiding Informatica zou je zeker in je opleidingskeuze moeten meenemen!</p><a href="index.html"><button type="button" class="btn btn-primary">Terug naar de Homepage</button></a></div>'
         }
         if (points < 5){
-            finalscoreElement.innerHTML = '<div id="finalScore15" class="finalScore"><h1> Resultaat 1-5</h1><p>hmmm, misschien is Informatica niet helemaal de opleiding die je zoekt. Gelukkig biedt avans nog vele andere\nopleidingen waar je interesses misschien beter aansluiten!</p></div>'
+            finalscoreElement.innerHTML = '<div id="finalScore15" class="finalScore"><h1>Resultaat 1-5</h1><p>hmmm, misschien is Informatica niet helemaal de opleiding die je zoekt. Gelukkig biedt avans nog vele andere\nopleidingen waar je interesses misschien beter aansluiten!</p><a href="index.html"><button type="button" class="btn btn-primary">Terug naar de Homepage</button></a></div>'
         }
     }
     console.log(points);
