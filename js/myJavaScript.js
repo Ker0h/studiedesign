@@ -1,31 +1,59 @@
 var points = 0;
+var questionsAnswered = [];
 
-function makeActiveA1(number){
-    var awnser1 = document.getElementById('q1a1');
-    var awnser2 = document.getElementById('q1a2');
-    if(number === 1){
-        if(awnser2.className === "list-group-item active") {
-            awnser2.className = "list-group-item list-group-item-action";
-            awnser1.className = "list-group-item active";
-            points++;
-        }if(awnser1.className === "list-group-item active"){
+function makeActive(questionNumber, answerNumber){
+    var answer1 = document.getElementById("q" + questionNumber + "a1");
+    var answer2 = document.getElementById("q" + questionNumber + "a2");
 
-        } else {
-            awnser1.className = "list-group-item active";
-            points++;
+    if (answerNumber === 1){
+        if(answer2.className === "list-group-item active") {
+            answer2.className = "list-group-item list-group-item-action";
+            answer1.className = "list-group-item active";
+        }if(answer1.className !== "list-group-item active"){
+            answer1.className = "list-group-item active";
         }
+        checkIfAlreadyCounted(questionNumber, 1);
     }
-    if(number === 2){
-        if(awnser1.className === "list-group-item active"){
-            awnser1.className = "list-group-item list-group-item-action";
-            awnser2.className = "list-group-item active";
-            points--;
-        }if(awnser2.className === "list-group-item active"){
 
-        }else{
-            awnser2.className = "list-group-item active";
-            points--;
+    if (answerNumber === 2){
+        if(answer1.className === "list-group-item active"){
+            answer1.className = "list-group-item list-group-item-action";
+            answer2.className = "list-group-item active";
+        }if(answer2.className !== "list-group-item active"){
+            answer2.className = "list-group-item active";
+        }
+        checkIfAlreadyCounted(questionNumber, 2);
+    }
+
+    if (questionsAnswered.length === 10){
+        var quizElement = document.getElementById('quizQuestions');
+        while ( quizElement.firstChild ) {
+            quizElement.removeChild( quizElement.firstChild );
+        }
+        window.scrollTo(0,0);
+        var finalscoreElement = document.getElementById('finalScores');
+        finalscoreElement.style.visibility = "visible";
+        if (points >= 8){
+            finalscoreElement.innerHTML = '<div id="finalScore810" class="finalScore"><h1> Resultaat 8-10</h1><p>Wauw! wat een score! Zo te zien zit hier wel je interesse. Met zo\'n score kunnen wij zeker aanraden om te beginnen met de opleiding Informatica op avans!</p></div>'
+        }
+        if (points >= 5 && points <= 7){
+            finalscoreElement.innerHTML = '<div id="finalScore57" class="finalScore"><h1> Resultaat 5-7</h1><p>Je interesse is zeker terug te zien uit de score van deze quiz. De opleiding Informatica zou je zeker in je opleidingskeuze moeten meenemen!</p></div>'
+        }
+        if (points < 5){
+            finalscoreElement.innerHTML = '<div id="finalScore15" class="finalScore"><h1> Resultaat 1-5</h1><p>hmmm, misschien is Informatica niet helemaal de opleiding die je zoekt. Gelukkig biedt avans nog vele andere\nopleidingen waar je interesses misschien beter aansluiten!</p></div>'
         }
     }
     console.log(points);
+}
+
+function checkIfAlreadyCounted(questionNumber, answer){
+    for (var i = 0; i < questionsAnswered.length; i++){
+        if(questionsAnswered[i] === questionNumber){
+            return;
+        }
+    }
+    questionsAnswered.push(questionNumber);
+    if (answer === 1){
+        points++;
+    }
 }
