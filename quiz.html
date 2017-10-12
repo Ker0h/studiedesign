@@ -37,82 +37,87 @@
         </div><!--/.nav-collapse -->
     </div>
 </nav>
-<div class="container content">
-
+<div id="quizContent" class="container content">
     <div class="jumbotron">
         <h1 class="display-3">Doe hier de quiz!</h1>
         <p class="lead">Om er achter te komen of deze opleiding iets voor jou is kun je hier de quiz doen!</p>
     </div>
-    <div class="jumbotron">
-        <p>1. drink je graag koffie of energy drink?</p>
-        <div class="list-group">
-            <a id="q1a1" data-attr="off" onclick="makeActiveA1(1)" class="list-group-item list-group-item-action">ja</a>
-            <a id="q1a2" data-attr="off" onclick="makeActiveA1(2)"
-               class="list-group-item list-group-item-action">nee</a>
+    <div id="quizQuestions">
+        <div id="question1" class="jumbotron question">
+            <p>1. drink je graag koffie of energy drink?</p>
+            <div class="list-group ">
+                <a id="q1a1" data-attr="off" onclick="makeActive(1, 1)" class="list-group-item list-group-item-action">ja</a>
+                <a id="q1a2" data-attr="off" onclick="makeActive(1, 2)"
+                   class="list-group-item list-group-item-action">nee</a>
+            </div>
+        </div>
+        <div id="question2" class="jumbotron question">
+            <p>2. vraag?</p>
+            <div class="list-group ">
+                <a id="q2a1" data-attr="off" onclick="makeActive(2, 1)" class="list-group-item list-group-item-action">ja</a>
+                <a id="q2a2" data-attr="off" onclick="makeActive(2, 2)" class="list-group-item list-group-item-action">nee</a>
+            </div>
+        </div>
+        <div id="question3" class="jumbotron question">
+            <p>3. vraag?</p>
+            <div class="list-group ">
+                <a id="q3a1" data-attr="off" onclick="makeActive(3, 1)" class="list-group-item list-group-item-action">ja</a>
+                <a id="q3a2" data-attr="off" onclick="makeActive(3, 2)" class="list-group-item list-group-item-action">nee</a>
+            </div>
+        </div>
+        <div id="question4" class="jumbotron question">
+            <p>4. vraag?</p>
+            <div class="list-group ">
+                <a id="q4a1" data-attr="off" onclick="makeActive(4, 1)" class="list-group-item list-group-item-action">ja</a>
+                <a id="q4a2" data-attr="off" onclick="makeActive(4, 2)" class="list-group-item list-group-item-action">nee</a>
+            </div>
+        </div>
+        <div id="question5" class="jumbotron question">
+            <p>5. vraag?</p>
+            <div class="list-group">
+                <a id="q5a1" data-attr="off" onclick="makeActive(5, 1)" class="list-group-item list-group-item-action">ja</a>
+                <a id="q5a2" data-attr="off" onclick="makeActive(5, 2)" class="list-group-item list-group-item-action">nee</a>
+            </div>
+        </div>
+        <div id="question6" class="jumbotron question">
+            <p>6. vraag?</p>
+            <div class="list-group">
+                <a id="q6a1" data-attr="off" onclick="makeActive(6, 1)" class="list-group-item list-group-item-action">ja</a>
+                <a id="q6a2" data-attr="off" onclick="makeActive(6, 2)" class="list-group-item list-group-item-action">nee</a>
+            </div>
+        </div>
+        <div id="question7" class="jumbotron question">
+            <p>7. vraag?</p>
+            <div class="list-group">
+                <a id="q7a1" data-attr="off" onclick="makeActive(7, 1)" class="list-group-item list-group-item-action">ja</a>
+                <a id="q7a2" data-attr="off" onclick="makeActive(7, 2)" class="list-group-item list-group-item-action">nee</a>
+            </div>
+        </div>
+        <div id="question8" class="jumbotron question">
+            <p>8. vraag?</p>
+            <div class="list-group">
+                <a id="q8a1" data-attr="off" onclick="makeActive(8, 1)" class="list-group-item list-group-item-action">ja</a>
+                <a id="q8a2" data-attr="off" onclick="makeActive(8, 2)" class="list-group-item list-group-item-action">nee</a>
+            </div>
+        </div>
+        <div id="question9" class="jumbotron question">
+            <p>9. vraag?</p>
+            <div class="list-group">
+                <a id="q9a1" data-attr="off" onclick="makeActive(9, 1)" class="list-group-item list-group-item-action">ja</a>
+                <a id="q9a2" data-attr="off" onclick="makeActive(9, 2)" class="list-group-item list-group-item-action">nee</a>
+            </div>
+        </div>
+        <div id="question10" class="jumbotron question">
+            <p>10. vraag?</p>
+            <div class="list-group">
+                <a id="q10a1" data-attr="off" onclick="makeActive(10, 1)"
+                   class="list-group-item list-group-item-action">ja</a>
+                <a id="q10a2" data-attr="off" onclick="makeActive(10, 2)"
+                   class="list-group-item list-group-item-action">nee</a>
+            </div>
         </div>
     </div>
-    <div class="jumbotron">
-        <p>2. vraag?</p>
-        <div class="list-group">
-            <a id="" data-attr="off" onclick="makeActiveA1(1)" class="list-group-item list-group-item-action">ja</a>
-            <a id="" data-attr="off" onclick="makeActiveA1(2)" class="list-group-item list-group-item-action">nee</a>
-        </div>
-    </div>
-    <div class="jumbotron">
-        <p>3. vraag?</p>
-        <div class="list-group">
-            <a id="" data-attr="off" onclick="" class="list-group-item list-group-item-action">ja</a>
-            <a id="" data-attr="off" onclick="" class="list-group-item list-group-item-action">nee</a>
-        </div>
-    </div>
-    <div class="jumbotron">
-        <p>4. vraag?</p>
-        <div class="list-group">
-            <a id="" data-attr="off" onclick="" class="list-group-item list-group-item-action">ja</a>
-            <a id="" data-attr="off" onclick="" class="list-group-item list-group-item-action">nee</a>
-        </div>
-    </div>
-    <div class="jumbotron">
-        <p>5. vraag?</p>
-        <div class="list-group">
-            <a id="" data-attr="off" onclick="" class="list-group-item list-group-item-action">ja</a>
-            <a id="" data-attr="off" onclick="" class="list-group-item list-group-item-action">nee</a>
-        </div>
-    </div>
-    <div class="jumbotron">
-        <p>6. vraag?</p>
-        <div class="list-group">
-            <a id="" data-attr="off" onclick="" class="list-group-item list-group-item-action">ja</a>
-            <a id="" data-attr="off" onclick="" class="list-group-item list-group-item-action">nee</a>
-        </div>
-    </div>
-    <div class="jumbotron">
-        <p>7. vraag?</p>
-        <div class="list-group">
-            <a id="" data-attr="off" onclick="" class="list-group-item list-group-item-action">ja</a>
-            <a id="" data-attr="off" onclick="" class="list-group-item list-group-item-action">nee</a>
-        </div>
-    </div>
-    <div class="jumbotron">
-        <p>8. vraag?</p>
-        <div class="list-group">
-            <a id="" data-attr="off" onclick="" class="list-group-item list-group-item-action">ja</a>
-            <a id="" data-attr="off" onclick="" class="list-group-item list-group-item-action">nee</a>
-        </div>
-    </div>
-    <div class="jumbotron">
-        <p>9. vraag?</p>
-        <div class="list-group">
-            <a id="" data-attr="off" onclick="" class="list-group-item list-group-item-action">ja</a>
-            <a id="" data-attr="off" onclick="" class="list-group-item list-group-item-action">nee</a>
-        </div>
-    </div>
-    <div class="jumbotron">
-        <p>10. vraag?</p>
-        <div class="list-group">
-            <a id="" data-attr="off" onclick="" class="list-group-item list-group-item-action">ja</a>
-            <a id="" data-attr="off" onclick="" class="list-group-item list-group-item-action">nee</a>
-        </div>
+    <div id="finalScores" class="jumbotron finalScore">
     </div>
 </div>
 <script src="js/myJavaScript.js"></script>

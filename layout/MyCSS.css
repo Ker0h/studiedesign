@@ -83,3 +83,10 @@ table {
     text-align: center;
 }
 
+
+    }
+}
+
+#finalScores{
+    visibility: hidden;
+}
