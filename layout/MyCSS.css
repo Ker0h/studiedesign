@@ -99,8 +99,6 @@ h1, h2 {
     height: auto;
 }
 
-
-
 .carousel {
     padding-top: 20px;
     width: 100%;
@@ -126,6 +124,16 @@ table {
     padding: 1rem;
     text-align: center;
 }
+
+#quizQuestions .jumbotron, .list-group {
+    opacity: 0.85;
+}
+
+#quizQuestions p {
+    font: 400 15px/1.8 "Lato", sans-serif;
+}
+
+
 
 #finalScores{
     visibility: hidden;
