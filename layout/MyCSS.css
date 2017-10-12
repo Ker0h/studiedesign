@@ -1,4 +1,27 @@
 /* Mobile first*/
+@media only screen and (max-width: 600px) {
+    #logo {
+        left: 50%;
+        position: relative;
+        transform: translateX(-50%);
+    }
+}
+
+
+/*rule for medium sized screens*/
+@media only screen and (min-width: 600px) and (max-width: 768px){
+    #logo {
+        left: 50%;
+        position: relative;
+        transform: translateX(-50%);
+    }
+}
+
+/* rule for bigger screens*/
+@media only screen and (min-width: 768px) {
+
+}
+
 body {
     padding-top: 70px;
     background-image: url(../assets/images/10888.jpg);
@@ -8,24 +31,8 @@ body {
     background-size: cover;
     font: 400 15px/1.8 "Lato", sans-serif;
     color: #777;
-
 }
 
-/*rule for medium sized screens*/
-@media only screen and (min-width: 400px) {
-    #logo {
-        width: 32%;
-        height: auto;
-    }
-}
-
-/* rule for bigger screens*/
-@media only screen and (min-width: 1190px) {
-    #logo {
-        width: 32%;
-        height: auto;
-    }
-}
 
 h1, h2 {
     letter-spacing: 5px;
@@ -35,7 +42,6 @@ h1, h2 {
 }
 
 #fullpage p {
-    font-family: 'Roboto', sans-serif;
     bottom: 20px;
     color: white;
     margin: 0;
@@ -51,7 +57,7 @@ h1, h2 {
 }
 
 #logo {
-    width: 32%;
+    width: 45px;
     height: auto;
 }
 
@@ -59,10 +65,9 @@ h1, h2 {
     padding-top: 20px;
 }
 
-.section {
+#fullpage {
     background-color: #000;
     opacity: 0.65;
-    width: 100%;
 }
 
 .period {

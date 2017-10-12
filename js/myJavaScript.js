@@ -61,8 +61,9 @@ function checkIfAlreadyCounted(questionNumber, answer){
 //Initializing fullPage.js
 $(document).ready(function() {
     $('#fullpage').fullpage({
-        //loopTop: true,
-        loopBottom: true,
-        anchors:['home', 'education', 'schema', 'professions', 'admission', 'points']
+        anchors: ['home', 'education', 'subjects', 'professions', 'admission', 'points'],
+        afterResponsive: function(){
+            $('#fullpage').destroy();
+        }
     });
 });
