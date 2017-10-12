@@ -29,3 +29,12 @@ function makeActiveA1(number){
     }
     console.log(points);
 }
+
+//Initializing fullPage.js
+$(document).ready(function() {
+    $('#fullpage').fullpage({
+        //loopTop: true,
+        loopBottom: true,
+        anchors:['home', 'education', 'schema', 'professions', 'admission', 'points']
+    });
+});
