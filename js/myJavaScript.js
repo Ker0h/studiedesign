@@ -61,7 +61,7 @@ function checkIfAlreadyCounted(questionNumber, answer){
 //Initializing fullPage.js
 $(document).ready(function() {
     $('#fullpage').fullpage({
-        anchors: ['home', 'education', 'subjects', 'professions', 'admission', 'points'],
+        anchors: ['home', 'education', 'subjects', 'professions', 'admission', 'points', 'footer'],
         afterResponsive: function(){
             $('#fullpage').destroy();
         }
