@@ -67,8 +67,8 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    font: 400 15px/1.8 "Lato", sans-serif;
-    color: #777;
+    font: 400 17px/1.8 "Lato", sans-serif;
+    color: #fff;
 }
 
 
@@ -81,7 +81,7 @@ h1, h2 {
 
 #fullpage p {
     bottom: 20px;
-    color: white;
+    color: #fff;
     margin: 0;
 }
 
@@ -106,7 +106,7 @@ h1, h2 {
 
 #fullpage {
     background-color: #000;
-    opacity: 0.65;
+    opacity: 0.7;
 }
 
 .period {
@@ -117,6 +117,12 @@ table {
     width: 100%;
 }
 
+#quiz-button {
+    font: 400 20px/1.8 "Lato", sans-serif;
+    color: black;
+    opacity: 0.9;
+}
+
 #footer {
     right: 0;
     bottom: 0;
@@ -125,14 +131,10 @@ table {
     text-align: center;
 }
 
-#quizQuestions .jumbotron, .list-group {
-    opacity: 0.85;
+#quizQuestions, .jumbotron, .list-group {
+    opacity: 0.9;
+    color: #555;
 }
-
-#quizQuestions p {
-    font: 400 15px/1.8 "Lato", sans-serif;
-}
-
 
 
 #finalScores{
