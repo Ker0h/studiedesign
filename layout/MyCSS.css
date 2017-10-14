@@ -81,7 +81,6 @@ h1, h2 {
 
 #fullpage p {
     bottom: 20px;
-    color: #fff;
     margin: 0;
 }
 
@@ -91,7 +90,7 @@ h1, h2 {
     border-style: solid;
     border-color: #0000bf;
     background-color: #0000bf;
-    opacity: 0.9;
+    opacity: 0.95;
 }
 
 #logo {
@@ -104,13 +103,35 @@ h1, h2 {
     width: 100%;
 }
 
+.carousel-inner > .item > img {
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+    opacity: 1.0 !important;
+}
+
 #fullpage {
     background-color: #000;
     opacity: 0.7;
 }
 
 .period {
-    background: linear-gradient(to bottom, #3fc1f1 0%, #3186a3 100%);
+    position: absolute;
+    display: block;
+    overflow: auto;
+    height: 1.5em;
+    width: 147px;
+    text-indent: -999em;
+    color: #666666;
+    background: linear-gradient(to bottom, #3186a3 0%, #0000bf 100%);
+}
+
+.period-2 {
+    width: 365px;
+}
+
+.period-altered {
+    width: 297px;
 }
 
 table {
@@ -123,12 +144,12 @@ table {
     opacity: 0.9;
 }
 
-#footer {
+.footer {
     right: 0;
     bottom: 0;
     left: 0;
     padding: 1rem;
-    text-align: center;
+    text-align: right;
 }
 
 #quizQuestions, .jumbotron, .list-group {

@@ -10,11 +10,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- scrollOverflow.js -->
+    <script src="js/scrolloverflow.min.js"></script>
     <!-- fullPage.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.min.js"></script>
     <!-- fullPage.js CSS -->
-    <link rel="stylesheet" type="text/css"
-          href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.css">
     <!-- Own CSS -->
     <link rel="stylesheet" type="text/css" href="layout/MyCSS.css"/>
 </head>
@@ -37,7 +38,7 @@
                 <ul class="nav navbar-nav">
                     <li><a href="#IT">Informatica</a></li>
                     <li><a href="#education">Opleiding</a></li>
-                    <li><a href="#subjects">Vakken</a></li>
+                    <li><a href="#structure">Opbouw</a></li>
                     <li><a href="#professions">Beroepsprofielen</a></li>
                     <li><a href="#admission">Toelating</a></li>
                     <li><a href="#points">Studiepunten</a></li>
@@ -53,15 +54,15 @@
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="item active">
-                        <img class="img-responsive center-block" src="assets/images/contact-hsl.jpg">
+                        <img class="img-responsive center-block" src="assets/images/carousel/x240/hogeschoollaan.jpg">
                     </div>
 
                     <div class="item">
-                        <img class="img-responsive center-block" src="assets/images/contact-owb215.jpg">
+                        <img class="img-responsive center-block" src="assets/images/carousel/x240/onderwijsboulevard.jpg">
                     </div>
 
                     <div class="item">
-                        <img class="img-responsive center-block" src="assets/images/stationsplein_50_300x160.jpg">
+                        <img class="img-responsive center-block" src="assets/images/carousel/x240/tilburg.jpg">
                     </div>
                 </div>
             </div>
@@ -101,11 +102,343 @@
 
         <div class="section">
             <h1>Hoe is de opleiding ingedeeld?</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante
-                dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.
-                Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent
-                taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in
-                libero. </p>
+        </div>
+
+        <div class="section fp-scrollable">
+            <div class="slide">
+                <h2>Jaar 1</h2>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>Vakken</th>
+                            <th>Blok 1</th>
+                            <th>Blok 2</th>
+                            <th>Blok 3</th>
+                            <th>Blok 4</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Bedrijfsprocessen</td>
+                            <td><span class="period"></span></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Beroepsoriëntatie</td>
+                            <td><span class="period"></span></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Nederlands</td>
+                            <td><span class="period"></span></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Programmeren in Java en Android</td>
+                            <td><span class="period"></span></td>
+                            <td><span class="period"></span></td>
+                            <td><span class="period"></span></td>
+                            <td><span class="period"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Relationele Databases</td>
+                            <td><span class="period"></span></td>
+                            <td><span class="period"></span></td>
+                            <td><span class="period"></span></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Studievaardigheden</td>
+                            <td><span class="period"></span></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Webdesign</td>
+                            <td><span class="period"></span></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Engels</td>
+                            <td></td>
+                            <td><span class="period"></span></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Duurzame ontwikkeling</td>
+                            <td></td>
+                            <td><span class="period"></span></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Professionele Vaardigheden</td>
+                            <td></td>
+                            <td><span class="period"></span></td>
+                            <td></td>
+                            <td><span class="period"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Requirements Engineering</td>
+                            <td></td>
+                            <td><span class="period"></span></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Onderzoeksvaardigheden</td>
+                            <td></td>
+                            <td></td>
+                            <td><span class="period"></span></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Project Management</td>
+                            <td></td>
+                            <td></td>
+                            <td><span class="period"></span></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Softwareontwerp en -architectuur</td>
+                            <td></td>
+                            <td></td>
+                            <td><span class="period"></span></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Computernetwerken</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><span class="period"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Scrum Project</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><span class="period"></span></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="slide">
+                <h2>Jaar 2</h2>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>Vakken</th>
+                            <th>Blok 1</th>
+                            <th>Blok 2</th>
+                            <th>Blok 3</th>
+                            <th>Blok 4</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>User Experience</td>
+                            <td><span class="period"></span></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Scrum Project</td>
+                            <td><span class="period"></span></td>
+                            <td><span class="period"></span></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Server-side Webdevelopment</td>
+                            <td><span class="period"></span></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Programmeren in Java en Android</td>
+                            <td><span class="period"></span></td>
+                            <td><span class="period"></span></td>
+                            <td><span class="period"></span></td>
+                            <td><span class="period"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Algoritmen en Datastructuren</td>
+                            <td></td>
+                            <td><span class="period"></span></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Client-side Webdevelopment</td>
+                            <td></td>
+                            <td><span class="period"></span></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Big data/Machine learning</td>
+                            <td></td>
+                            <td></td>
+                            <td><span class="period"></span></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Business Inteligence</td>
+                            <td></td>
+                            <td></td>
+                            <td><span class="period"></span></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Security</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><span class="period"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Computernetwerken</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><span class="period"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Professionele Vaardigheden</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><span class="period"></span></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="slide">
+                <h2>Jaar 3</h2>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>Vakken</th>
+                            <th>Blok 1</th>
+                            <th>Blok 2</th>
+                            <th>Blok 3</th>
+                            <th>Blok 4</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Praktijkstage</td>
+                            <td colspan="2"><span class="period period-altered"></span></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Professionele Vaardigheden</td>
+                            <td></td>
+                            <td></td>
+                            <td><span class="period"></span></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Security</td>
+                            <td></td>
+                            <td></td>
+                            <td><span class="period"></span></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Software architectuur</td>
+                            <td></td>
+                            <td></td>
+                            <td><span class="period"></span></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Artificial Intelligence</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><span class="period"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Serious Gaming</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><span class="period"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Solution Architecture</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><span class="period"></span></td>
+                        </tr>
+                        <tr>
+                            <td>User Experience</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><span class="period"></span></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="slide">
+                <h2>Jaar 4</h2>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>Vakken</th>
+                            <th>Blok 1</th>
+                            <th>Blok 2</th>
+                            <th>Blok 3</th>
+                            <th>Blok 4</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Minor</td>
+                            <td colspan="2"><span class="period period-2"></span></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Afstudeerstage</td>
+                            <td></td>
+                            <td></td>
+                            <td colspan="2"><span class="period period-2"></span></td>
+                            <td></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
 
         <div class="section">
@@ -124,7 +457,7 @@
             <h1>Toelatingseisen</h1>
             <p>Als je wilt starten met de opleiding ben je toelaatbaar
                 met de volgende profielen:
-                <strong>HAVO & VWO</strong>
+            <h2>HAVO & VWO</h2>
             <ul>
                 <li>C&M</li>
                 <li>E&M</li>
@@ -133,8 +466,8 @@
             </ul>
             </p>
 
+            <h2>Propedeuses en MBO</h2>
             <p>
-                <strong>Propedeuses en MBO</strong><br />
                 Je bent ook toelaatbaar als je een propedeuse hebt op WO of HBO niveau,
                 of een MBO-niveau 4 opleiding gedaan hebt die voldoende aansluit op de
                 opleiding Informatica.
@@ -168,7 +501,7 @@
             <div>
                 <hr>
                 <p>
-                    <button id="quiz-button" class="btn btn-lg btn-block" href="quiz.html">
+                    <button id="quiz-button" class="btn btn-lg btn-block" onclick="window.open('quiz.html')">
                         Wil je weten of de opleiding bij je past? Doe hier de quiz!
                     </button>
                 </p>
