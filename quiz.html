@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Quiz</title>
+    <title>StudieDesign</title>
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="favicon/ico"/>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -10,6 +10,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- scrollOverflow.js -->
+    <script src="js/scrolloverflow.min.js"></script>
+    <!-- fullPage.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.min.js"></script>
+    <!-- fullPage.js CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.css">
     <!-- Own CSS -->
     <link rel="stylesheet" type="text/css" href="layout/quiz.css"/>
 </head>
@@ -35,7 +41,7 @@
         </div><!--/.nav-collapse -->
     </div>
 </nav>
-<div id="quizContent" class="container content">
+<div id="quizContent" class="container">
     <div class="jumbotron">
         <h1 class="display-3">Doe hier de quiz!</h1>
         <p class="lead">Om er achter te komen of deze opleiding iets voor jou is kun je hier de quiz doen!</p>
@@ -44,74 +50,74 @@
         <div id="question1" class="jumbotron question">
             <p>1. Ben jij geïnteresseerd in hoe websites en programma's werken? </p>
             <div class="list-group ">
-                <a id="q1a1" data-attr="off" onclick="makeActive(1, 1)" class="list-group-item list-group-item-action">ja</a>
+                <a id="q1a1" data-attr="off" onclick="makeActive(1, 1)" class="list-group-item list-group-item-action">Ja</a>
                 <a id="q1a2" data-attr="off" onclick="makeActive(1, 2)"
-                   class="list-group-item list-group-item-action">nee</a>
+                   class="list-group-item list-group-item-action">Nee</a>
             </div>
         </div>
         <div id="question2" class="jumbotron question">
             <p>2. Wil jij leren om een website te ontwerpen en publiceren?</p>
             <div class="list-group ">
-                <a id="q2a1" data-attr="off" onclick="makeActive(2, 1)" class="list-group-item list-group-item-action">ja</a>
-                <a id="q2a2" data-attr="off" onclick="makeActive(2, 2)" class="list-group-item list-group-item-action">nee</a>
+                <a id="q2a1" data-attr="off" onclick="makeActive(2, 1)" class="list-group-item list-group-item-action">Ja</a>
+                <a id="q2a2" data-attr="off" onclick="makeActive(2, 2)" class="list-group-item list-group-item-action">Nee</a>
             </div>
         </div>
         <div id="question3" class="jumbotron question">
             <p>3. Vind jij het een uitdaging om voor een bedrijf een opdracht te vervullen?</p>
             <div class="list-group ">
-                <a id="q3a1" data-attr="off" onclick="makeActive(3, 1)" class="list-group-item list-group-item-action">ja</a>
-                <a id="q3a2" data-attr="off" onclick="makeActive(3, 2)" class="list-group-item list-group-item-action">nee</a>
+                <a id="q3a1" data-attr="off" onclick="makeActive(3, 1)" class="list-group-item list-group-item-action">Ja</a>
+                <a id="q3a2" data-attr="off" onclick="makeActive(3, 2)" class="list-group-item list-group-item-action">Nee</a>
             </div>
         </div>
         <div id="question4" class="jumbotron question">
             <p>4. Kun jij met zelfstudie jezelf elke keer weer verder ontwikkelen?</p>
             <div class="list-group ">
-                <a id="q4a1" data-attr="off" onclick="makeActive(4, 1)" class="list-group-item list-group-item-action">ja</a>
-                <a id="q4a2" data-attr="off" onclick="makeActive(4, 2)" class="list-group-item list-group-item-action">nee</a>
+                <a id="q4a1" data-attr="off" onclick="makeActive(4, 1)" class="list-group-item list-group-item-action">Ja</a>
+                <a id="q4a2" data-attr="off" onclick="makeActive(4, 2)" class="list-group-item list-group-item-action">Nee</a>
             </div>
         </div>
         <div id="question5" class="jumbotron question">
             <p>5. Ben jij in staat om jezelf aan te passen naar nieuwe technologieën?</p>
             <div class="list-group">
-                <a id="q5a1" data-attr="off" onclick="makeActive(5, 1)" class="list-group-item list-group-item-action">ja</a>
-                <a id="q5a2" data-attr="off" onclick="makeActive(5, 2)" class="list-group-item list-group-item-action">nee</a>
+                <a id="q5a1" data-attr="off" onclick="makeActive(5, 1)" class="list-group-item list-group-item-action">Ja</a>
+                <a id="q5a2" data-attr="off" onclick="makeActive(5, 2)" class="list-group-item list-group-item-action">Nee</a>
             </div>
         </div>
         <div id="question6" class="jumbotron question">
             <p>6. Vind jij het niet erg om later in een kantoor omgeving je beroep te beoefenen?</p>
             <div class="list-group">
-                <a id="q6a1" data-attr="off" onclick="makeActive(6, 1)" class="list-group-item list-group-item-action">ja</a>
+                <a id="q6a1" data-attr="off" onclick="makeActive(6, 1)" class="list-group-item list-group-item-action">Ja</a>
                 <a id="q6a2" data-attr="off" onclick="makeActive(6, 2)" class="list-group-item list-group-item-action">nee</a>
             </div>
         </div>
         <div id="question7" class="jumbotron question">
             <p>7. Wil jij leren code te schrijven die jou of anderen kunnen helpen in het dagelijks leven?</p>
             <div class="list-group">
-                <a id="q7a1" data-attr="off" onclick="makeActive(7, 1)" class="list-group-item list-group-item-action">ja</a>
-                <a id="q7a2" data-attr="off" onclick="makeActive(7, 2)" class="list-group-item list-group-item-action">nee</a>
+                <a id="q7a1" data-attr="off" onclick="makeActive(7, 1)" class="list-group-item list-group-item-action">Ja</a>
+                <a id="q7a2" data-attr="off" onclick="makeActive(7, 2)" class="list-group-item list-group-item-action">Nee</a>
             </div>
         </div>
         <div id="question8" class="jumbotron question">
             <p>8. Heb je al eens eerder code geschreven of een website gemaakt?</p>
             <div class="list-group">
                 <a id="q8a1" data-attr="off" onclick="makeActive(8, 1)" class="list-group-item list-group-item-action">ja</a>
-                <a id="q8a2" data-attr="off" onclick="makeActive(8, 2)" class="list-group-item list-group-item-action">nee</a>
+                <a id="q8a2" data-attr="off" onclick="makeActive(8, 2)" class="list-group-item list-group-item-action">Nee</a>
             </div>
         </div>
         <div id="question9" class="jumbotron question">
             <p>9. Denk jij graag na over hoe je het best met informatie om kan gaan?</p>
             <div class="list-group">
-                <a id="q9a1" data-attr="off" onclick="makeActive(9, 1)" class="list-group-item list-group-item-action">ja</a>
-                <a id="q9a2" data-attr="off" onclick="makeActive(9, 2)" class="list-group-item list-group-item-action">nee</a>
+                <a id="q9a1" data-attr="off" onclick="makeActive(9, 1)" class="list-group-item list-group-item-action">Ja</a>
+                <a id="q9a2" data-attr="off" onclick="makeActive(9, 2)" class="list-group-item list-group-item-action">Nee</a>
             </div>
         </div>
         <div id="question10" class="jumbotron question">
             <p>10. Ben jij graag bezig met interactieve media, zoals videogames?</p>
             <div class="list-group">
                 <a id="q10a1" data-attr="off" onclick="makeActive(10, 1)"
-                   class="list-group-item list-group-item-action">ja</a>
+                   class="list-group-item list-group-item-action">Ja</a>
                 <a id="q10a2" data-attr="off" onclick="makeActive(10, 2)"
-                   class="list-group-item list-group-item-action">nee</a>
+                   class="list-group-item list-group-item-action">Nee</a>
             </div>
         </div>
     </div>
