@@ -69,3 +69,9 @@ $(document).ready(function() {
         }
     });
 });
+
+if($(window).width() < 960){
+    $('.period').html('X');
+    $('.period-2').innerHTML = "X";
+    $('.period-altered').innerHTML = "X";
+}
