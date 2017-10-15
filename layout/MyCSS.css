@@ -143,7 +143,7 @@ table {
     width: 100%;
 }
 
-#quiz-button {
+.big-btn {
     font: 400 20px/1.8 "Lato", sans-serif;
     color: black;
     opacity: 0.9;

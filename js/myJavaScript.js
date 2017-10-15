@@ -72,7 +72,8 @@ $(document).ready(function() {
             'professions', 'admission', 'points', 'footer']
     });
 
-    /* replaces subject table with link to avans website if windows size < 1060px */
+    /* replaces subject table with link to Avans website if windows size < 1060px
+    * To test, resize the window and reload */
     if($(window).width() < 1060) {
         $("#responsive-subjects").html(("<p>\n" +
             "                    <button class=\"btn btn-lg btn-block big-btn\" onclick=\"window.open('http://www.avans.nl/opleidingen/opleidingzoeker/informatica-breda-voltijd-bachelor/opbouw')\">\n" +
