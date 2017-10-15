@@ -1,9 +1,6 @@
 var points = 0;
 var questionsAnswered = [];
 
-//Deze functie kijkt allereerst naar welk antwoord is aangeklikt en controlleerd of een ander antwoord al eerder was aangeklikt.
-//Daarbij voegt hij de vraag toe aan een array en geeft punten voor de beantwoorde vraag.
-//Als de array alle vragen bevat verwijdert hij de vragen en print hij je uitslag uit.
 function makeActive(questionNumber, answerNumber){
     var answer1 = document.getElementById("q" + questionNumber + "a1");
     var answer2 = document.getElementById("q" + questionNumber + "a2");
@@ -43,11 +40,11 @@ function makeActive(questionNumber, answerNumber){
             finalscoreElement.innerHTML = '<div id="finalScore57" class="finalScore"><h1>Resultaat 5-7</h1><p>Je interesse is zeker terug te zien uit de score van deze quiz. De opleiding Informatica zou je zeker in je opleidingskeuze moeten meenemen!</p><a href="index.html"><button type="button" class="btn btn-primary">Terug naar de Homepage</button></a></div>'
         }
         if (points < 5){
-            finalscoreElement.innerHTML = '<div id="finalScore15" class="finalScore"><h1>Resultaat 1-5</h1><p>Hmmm, misschien is Informatica niet helemaal de opleiding die jij zoekt. Gelukkig biedt Avans nog vele andere\nopleidingen waar je interesses misschien beter aansluiten!</p><a href="index.html"><button type="button" class="btn btn-primary">Terug naar de Homepage</button></a></div>'
+            finalscoreElement.innerHTML = '<div id="finalScore15" class="finalScore"><h1>Resultaat 1-5</h1><p>hmmm, misschien is Informatica niet helemaal de opleiding die je zoekt. Gelukkig biedt avans nog vele andere\nopleidingen waar je interesses misschien beter aansluiten!</p><a href="index.html"><button type="button" class="btn btn-primary">Terug naar de Homepage</button></a></div>'
         }
     }
 }
-//Deze funtie kijkt naar of de vraag al eerder was beantwoord, zo niet voeg de vraag toe aan de array en geef per punten voor. zo wel doe niks.
+
 function checkIfAlreadyCounted(questionNumber, answer){
     for (var i = 0; i < questionsAnswered.length; i++){
         if(questionsAnswered[i] === questionNumber){
@@ -62,19 +59,25 @@ function checkIfAlreadyCounted(questionNumber, answer){
 
 //Initializing fullPage.js
 $(document).ready(function() {
+    /* Applies the Javascript to the #fullpage div, allows auto scrolling
+          to each div with a "section" class */
     $('#fullpage').fullpage({
+        /* Adds padding to each section */
         paddingTop: 150,
         paddingBottom: 50,
+        /* Allows normal scrrolling for the subject table */
         scrollOverflow: true,
-        anchors: ['home', 'IT', 'education', 'structure', 'subjects', 'professions', 'admission', 'points', 'footer'],
-        afterResponsive: function(){
-            $('#fullpage').destroy();
-        }
+        /* Allows navigation to sections from links, such as the navbar */
+        anchors: ['home', 'IT', 'education', 'structure', 'subjects',
+            'professions', 'admission', 'points', 'footer']
     });
-});
 
-if($(window).width() < 960){
-    $('.period').html('X');
-    $('.period-2').innerHTML = "X";
-    $('.period-altered').innerHTML = "X";
-}
+    /* replaces subject table with link to avans website if windows size < 1060px */
+    if($(window).width() < 1060) {
+        $("#responsive-subjects").html(("<p>\n" +
+            "                    <button class=\"btn btn-lg btn-block big-btn\" onclick=\"window.open('http://www.avans.nl/opleidingen/opleidingzoeker/informatica-breda-voltijd-bachelor/opbouw')\">\n" +
+            "                        Klik hier om de verschillende<br /> vakken te bekijken\n" +
+            "                    </button>\n" +
+            "                </p>"))
+    }
+});

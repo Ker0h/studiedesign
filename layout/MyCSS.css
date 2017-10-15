@@ -182,3 +182,8 @@ table {
 .info {
     font: 22px 'Lato';
 }
+
+#credit {
+    font: 30px 'Lato';
+    text-align: center;
+}
