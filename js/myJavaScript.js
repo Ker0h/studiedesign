@@ -43,7 +43,6 @@ function makeActive(questionNumber, answerNumber){
             finalscoreElement.innerHTML = '<div id="finalScore15" class="finalScore"><h1>Resultaat 1-5</h1><p>hmmm, misschien is Informatica niet helemaal de opleiding die je zoekt. Gelukkig biedt avans nog vele andere\nopleidingen waar je interesses misschien beter aansluiten!</p><a href="index.html"><button type="button" class="btn btn-primary">Terug naar de Homepage</button></a></div>'
         }
     }
-    console.log(points);
 }
 
 function checkIfAlreadyCounted(questionNumber, answer){
