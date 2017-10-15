@@ -1,0 +1,100 @@
+/* Mobile first*/
+@media only screen and (max-width: 600px) {
+    #logo {
+        left: 50%;
+        position: relative;
+        transform: translateX(-50%);
+    }
+}
+
+
+/*rule for medium sized screens*/
+@media only screen and (min-width: 600px) and (max-width: 768px){
+    #logo {
+        left: 50%;
+        position: relative;
+        transform: translateX(-50%);
+    }
+}
+
+/* rule for bigger screens*/
+@media only screen and (min-width: 768px) {
+
+}
+
+/*Specific media query for the bootstrap navbar */
+@media (max-width: 991px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+}
+
+body {
+    font: 400 17px/1.8 "Lato", sans-serif;
+    color: #fff;
+    background-color: #1e425d;
+    opacity: 0.7;
+}
+
+
+h1, h2 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #fff;
+}
+
+#colorstrip{
+    width: 100%;
+    height: 10px;
+    border-style: solid;
+    border-color: #0000bf;
+    background-color: #0000bf;
+    opacity: 0.95;
+}
+
+#logo {
+    width: 45px;
+    height: auto;
+}
+
+#quizQuestions, .jumbotron, .list-group {
+    opacity: 0.9;
+    color: #555;
+}
+
+
+#finalScores{
+    visibility: hidden;
+}
